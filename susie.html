@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<title>About Susie</title>
+		<style>
+			li {
+				font-size: 20px;
+			}
+
+			#box {
+				width: 200;
+				height: 100;
+				background: red;
+				visibility: hidden;
+			}
+		</style>
+
+		<script>
+			function alertHi() {
+				alert("Hi Susie");
+				document.getElementById("title").style.color = "red";
+
+				//document.getElementById("bunny").style.height = document.getElementById("bunny").style.height + 100;
+				// document.getElementById("bunny").style.height += 100
+
+				document.getElementById("bunny").style.height = 200;
+
+				document.getElementById("box").style.visibility = "visible";
+			}
+
+			function hover() {
+				document.getElementById("bunny").style.height = 200;
+			}
+
+			function leave() {
+				document.getElementById("bunny").style.height = 100;
+			}
+		</script>
+	</head>
+
+	<body>
+		<h1 id="title">Hello!!</h1>
+
+		<p>Hi I'm Susie. I like: </p>
+
+		<ul>
+			<li>bunnies</li>
+			<li>design</li>
+			<li>etc.</li>
+		</ul>
+
+		<img onmouseover="hover()" onmouseleave="leave()" id="bunny" style="height:100px" src="https://media.newyorker.com/photos/590975732179605b11ad82ae/master/pass/Wilson-Eating-Rabbit.jpg">
+
+		<button onclick="alertHi()">Increase Size</button>
+
+		<div id="box">
+		</div>
+
+	</body>
+</html>
