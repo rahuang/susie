@@ -27,6 +27,10 @@
 				document.getElementById("box").style.visibility = "visible";
 			}
 
+			function changePic() {
+				document.getElementById("bunny").src = "https://avatars3.githubusercontent.com/u/11137066?s=400&u=7e62fb401e94155511961ae07ae89c84a34a5398&v=4"
+			}
+
 			function hover() {
 				document.getElementById("bunny").style.height = 200;
 			}
@@ -48,7 +52,7 @@
 			<li>etc.</li>
 		</ul>
 
-		<img onmouseover="hover()" onmouseleave="leave()" id="bunny" style="height:100px" src="https://media.newyorker.com/photos/590975732179605b11ad82ae/master/pass/Wilson-Eating-Rabbit.jpg">
+		<img onmouseover="hover()" onmouseleave="leave()" onclick="changePic()" id="bunny" style="height:100px" src="https://media.newyorker.com/photos/590975732179605b11ad82ae/master/pass/Wilson-Eating-Rabbit.jpg">
 
 		<button onclick="alertHi()">Increase Size</button>
 
