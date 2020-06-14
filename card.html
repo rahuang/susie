@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        function showAnimals() {
+          var images = document.getElementsByTagName("IMG")
+          for (var i = 0; i < images.length; i++) {
+            images[i].style.visibility = "visible";
+          }
+          var suprise = document.getElementsByTagName("H1")[0]
+          suprise.style.visibility = "visible";
+        }
+        function hideAnimals() {
+          var images = document.getElementsByTagName("IMG")
+          for (var i = 0; i < images.length; i++) {
+            images[i].style.visibility = "hidden";
+          }
+        }
+    </script>
+  </head>
+  <body style="text-align: center;">
+    <div class="pyro">
+      <div class="before"></div>
+      <div class="after"></div>
+    </div>
+
+    <div class="card" onmouseover="showAnimals();" onmouseout="hideAnimals();">
+      <div class="back"></div>
+      <div class="front">
+        <div class="cover-shape-large">
+          <div class="shape-diamond"></div>
+          <div class="shape-block"></div>
+        </div>
+        <div class="cover-shape-small">
+          <div class="shape-diamond"></div>
+          <div class="shape-block">
+            <div class="cake">
+              <div class="layer layer-bottom"></div>
+              <div class="layer layer-middle"></div>
+              <div class="layer layer-top"></div>
+              <div class="icing"></div>
+              <div class="drip drip1"></div>
+              <div class="drip drip2"></div>
+              <div class="drip drip3"></div>
+              <div class="candle">
+                <div class="flame"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-container">
+        <p id="head">Happy Birthday Bunny!!!</p>
+        <p>I wish you the most amazing, awesome, happy, fun birthday ever! I'm sad I can't celebrate your birthday with you in person :( but now we can celebrate both our birthdays when we meet up hehe</p>
+        <p>I hope you like the sticker printer I got you, so you can print all your cute little logo designs! I know I said I'd never get Between stickers, but I wanted to make you extra happy by getting some new ones for your birthday!<p>
+      </div>
+    </div>
+
+    <h1 style="visibility:hidden;z-index:10000"><a style="color: white; font-size:75px;z-index:10000;text-decoration:none" href="gallery.html">Surprise!!!!</a></h1>
+
+    <img class="wiggle2" src="img/bunny.png" height=250px style="top:5%; left:8%; z-index:0">
+    <img class="wiggle2" src="img/test2.png" height=150px style="top:12%; left:70%; z-index:0">
+    <img class="wiggle" src="img/test2.png" height=350px style="top:50%; left:5%; z-index:0">
+    <img class="wiggle2" src="img/bunny.png" height=200px style="top:75%; left:30%; z-index:0">
+    <img class="wiggle" src="img/bunny.png" height=230px style="top:35%; left:80%; z-index:0">
+
+    <img class="wiggle" src="img/hedgehog.png" height=280px style="top:5%; left:85%; z-index:0">
+    <img class="wiggle2" src="img/hedgehog.png" height=150px style="top:35%; left:62%; z-index:0">
+    <img class="wiggle" src="img/test1.png" height=350px style="top:70%; left:45%; z-index:0">
+    <img class="wiggle" src="img/hedgehog.png" height=200px style="top:30%; left:20%; z-index:0">
+    <img class="wiggle2" src="img/test3.png" height=230px style="top:65%; left:77%; z-index:0">
+  </body>
+  
+</html>
